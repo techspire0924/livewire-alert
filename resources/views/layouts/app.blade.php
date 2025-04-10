@@ -14,6 +14,9 @@
         .alert-success { background-color: #d1fae5; border-color: #10b981; color: #065f46; }
         .alert-error { background-color: #fee2e2; border-color: #ef4444; color: #b91c1c; }
         .alert-info { background-color: #dbeafe; border-color: #3b82f6; color: #1e40af; }
+        
+        /* Alpine.js x-cloak */
+        [x-cloak] { display: none !important; }
     </style>
 </head>
 
@@ -21,7 +24,7 @@
     <div class="container mx-auto">
         @yield('content')
     </div>
-
+    
     <!-- Livewire Scripts -->
     @livewireScripts
 </body>
