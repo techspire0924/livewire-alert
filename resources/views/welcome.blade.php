@@ -8,7 +8,7 @@
         <livewire:alert />
 
         <!-- Button to trigger the alert -->
-        <button wire:click="$dispatch('showAlert', { type: 'success', message: 'Operation completed successfully!' })">Show Success Alert</button>
-        <button wire:click="$dispatch('showAlert', { type: 'error', message: 'Something went wrong!' })">Show Error Alert</button>
+        <button wire:click="$emitTo('alert', 'showAlert', 'success', 'Operation completed successfully!')">Show Success Alert</button>
+        <button wire:click="$emitTo('alert', 'showAlert', 'error', 'Something went wrong!')">Show Error Alert</button>
     </div>
 @endsection
