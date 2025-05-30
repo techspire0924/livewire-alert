@@ -8,7 +8,7 @@ class Alert extends Component
 {
     public $type = 'info';   // Default type
     public $message = '';    // Default message
-    public $visible = true; // Default visibility
+    public $visible = false; // Default visibility (hidden initially)
 
     protected $listeners = ['showAlert' => 'display'];
 
